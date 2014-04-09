@@ -1,4 +1,9 @@
 Workshare::Application.routes.draw do
+
+
+
+  resources :files 
+  get 'files' => 'files#index', as: :files_index
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
